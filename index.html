@@ -1,15 +1,107 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Alix Grillo Portfolio</title>
 
-    </head>
-    <body>
-        <h1>This is a placeholder for Alix's portfolio</h1>
+<head>
+    <title>Portfolio using Bootstrap</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Pacifico|Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-        <a href="/Basic-Portfolio">Portfolio Pages</a>
 
-       
-    </body>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-light p-0">
+        <div class="container">
+            <h1 class="p-3 m-0" href="index.html">Alix Grillo</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3 mb-10 pt-2">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 >About Me</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 p-3">
+                <img src="assets/images/alix1.jpg" class="float-left img-fluid" alt="Profile Picture">
+            </div>
+            <div class="col-md-9 p-3">
+                <blockquote class="font-italic text-center">"Take the back roads instead of the highways" - Minnie Pearl</blockquote>
+                <p>
+                    This quote encompasses the path that Alix Grillo
+                    has been on in her career. As a mathematics and history major graduate from Gonzaga University, she
+                    was destined
+                    to be consumed by the insurance industry in one form or another. In her ten years at Great-West
+                    Financial, she
+                    performed a variety of jobs, including business systems, sales/marketing, operations, and project
+                    and relationship
+                    management. During this time, she also completed an MBA in Risk Management from University of
+                    Colorado Denver.
+
+                </p>
+                <p>
+
+                    Then, an amazing thing happened... she took a chance on something that would change her life
+                    forever. Her boyfriend
+                    - who would later be her husband - took an apprenticeship in a small town outside Edinburgh,
+                    Scotland and took Alix
+                    with him. During her time there, she completed an MSc in Business Analytics from the University of
+                    Edinburgh. This
+                    opened a world of opportunity because she did not even realize how far the world of business
+                    analytics and data
+                    science stretched. She was exposed to algorithms, processes, and technical capabilities that she did
+                    know existed. Her
+                    capstone work was research to determine a novel approach to solving a resource problem in airport
+                    operations using a
+                    hybrid simulation and heuristic approach. This work is being published as part of the Winter
+                    Simulation Conference.
+
+                </p>
+                <p>
+
+                    All of these twists and turns have led Alix to discover her passion for software and web
+                    development. In her current
+                    role at Charles Schwab as Manager, Risk Analytics, she has opportunities to contribute to the
+                    information system
+                    supporting her team using a .NET framework with a desktop and web version. As this system is still
+                    very much in the
+                    development phases, Alix has seen the system come to life. Alix can bring aspects of all her walks
+                    of life to a
+                    software engineering career and add value to any project that she takes part in.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <nav class="navbar fixed-bottom navbar-dark bg-secondary justify-content-center border-top border-info mt-5">
+        <a class="navbar-brand" href="#">&copy Copyright</a>
+    </nav> -->
+    <footer class="footer fixed-bottom m-0 mt-5">
+        <!-- <div class="container bg-dark"> -->
+            <p class="text-white text-center m-0 p-1">&copy Copyright</p>
+        <!-- </div> -->
+    </footer>
+</body>
+
 </html>

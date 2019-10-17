@@ -1,0 +1,72 @@
+ /* the body should have a background image, set the font to Arial, and width to 960px (centered on page) */
+body{
+    background-image: url("../background/background-brown-carpentry-326311.jpg");
+
+    margin-bottom: 5%;
+}
+/* the font for h1 will be Great Vibes */
+h1{
+    font-family: 'Great Vibes', cursive;
+    background-color: #4aaaa5;
+    color: white;
+    font-size: 50px;
+
+}
+.nav-link{
+    font-family: 'Roboto', sans-serif; 
+}
+
+/* the font for h1 will be Pacifico */
+h2{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 35px;
+    color: #4aaaa5;
+    padding: 2% 0%;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #dddddd;
+}
+.navbar{
+    background-image: url("../background/fresh_snow/fresh_snow.png");
+    
+}
+.container{
+    font-family: 'Roboto', sans-serif; 
+    /* background-color: #ffffff; */
+    background-image: url("../background/fresh_snow/fresh_snow.png");
+    
+}
+.card-img-overlay{
+    background-color: #4aaaa5;
+    color: white;
+    /* margin-top: 15rem!important; */
+
+}
+.card :hover{
+    color: white ;
+    background-color: #205E5B ;
+}
+.btn{
+    background-color: #4aaaa5;
+    color: white;
+}
+footer{
+
+    background-color: #666666;
+    text-align: center;
+    color: white;
+    border-top-color: #4aaaa5;
+    border-top-width: 3px;
+    border-top-style: solid;
+}
+
+/* .fa-signature{
+    font-size: 16px;
+    color: blue;
+}
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+} */
+
+/* font-family: 'Pacifico', cursive;
+font-family: 'Roboto', sans-serif; */
