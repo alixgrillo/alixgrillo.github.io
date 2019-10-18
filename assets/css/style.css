@@ -36,15 +36,20 @@ h2{
     background-image: url("../background/fresh_snow/fresh_snow.png");
     
 }
-.card-img-overlay{
+a{
+    color: white;
+}
+.card-img-top{
     background-color: #4aaaa5;
     color: white;
+    border-radius: 5px;
     /* margin-top: 15rem!important; */
 
 }
 .card :hover{
     color: white ;
     background-color: #205E5B ;
+    text-decoration: none;
 }
 .btn{
     background-color: #4aaaa5;
