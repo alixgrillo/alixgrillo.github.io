@@ -1,107 +1,283 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Portfolio using Bootstrap</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Pacifico|Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='icon' href='favicon.ico' type='image/x-icon'>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Import materialize.css-->
+    <!-- <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Slick Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+
+
+
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+
+
+
+    <title>Alix Grillo</title>
 </head>
 
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-light bg-light p-0">
-        <div class="container">
-            <h1 class="p-3 m-0" href="index.html">Alix Grillo</h1>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+
+    <nav>
+        <div class="nav-wrapper">
+            <div class="socialMedia left hide-on-med-and-down">
+                <button class="btn waves-effect waves-light tooltipped" data-position="bottom" data-tooltip="Hire me!"
+                    id="hireme">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </button>
+                <button class="btn waves-effect waves-light tooltipped" data-position="bottom"
+                    data-tooltip="Download Resume" id="download">
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                </button>
+                <button class="btn waves-effect waves-light tooltipped" data-position="bottom"
+                    data-tooltip="GitHub Profile" id="github">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </button>
+                <button class="btn waves-effect waves-light tooltipped" data-position="bottom" data-tooltip="LinkedIn"
+                    id="linkedin">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </button>
             </div>
+            <!-- <a href="#" class="brand-logo">Logo</a> -->
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#landingPage">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                <i class=material-icons>menu</i>
+            </a>
         </div>
     </nav>
+    <ul class="sidenav" id="mobile-nav">
+            <li><a href="#landingPage">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <li><a href='assets/documents/cv-Alexandra_Clare.pdf' target="_blank">Download Resume</a></li>
+            <li><a href='https://github.com/alixgrillo' target="_blank">GitHub Profile</a></li>
+            <li><a href='https://www.linkedin.com/in/alixclare/' target="_blank">LinkedIn</a></li>
+    </ul>
 
-    <div class="container mt-3 mb-10 pt-2">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 >About Me</h2>
+    <div id='backgroundImg'></div>
+    <div class="container">
+        <div class="row" id="landingPage">
+            <h1>Alix <span id="name">Grillo</span></h1>
+            <p id="title">Web <span id="titleSub">Developer</span> from Golden, CO</p>
+        </div>
+        <div class="sections" id='about'>
+            <div class="row" id="aboutMeDiv">
+                <h2>About me</h2>
+                <img id="profilePic" src="assets/images/pic.jpg" alt="Alix Grillo">
+                <p>Alix Grillo is a web Developer with data science and business analyst experience adept at solving
+                    problems
+                    and implementing complicated configurations. Skills in HTML, CSS and Javascript and
+                    strengths in communicating both technical and non-technical aspects and maintaining a
+                    positive attitude that infects team morale. Overcame obstacles in completing published
+                    novel approach to hybrid simulation and heuristic approach to airport operations problem
+                    while completing MSc at the University of Edinburgh. Successfully drove an administration
+                    conversion project completion, including requirements design and testing, for 18,000 life
+                    insurance policies totaling $13bn of assets. Passionate about leveraging my previous
+                    experience to help companies build a web platform on which they can provide a service to their
+                    clients.
+                </p>
+                <p>Alix has experience in:</p>
+                <div class="row" id=languages>
+
+                    <ul>
+                        <div class="col s3">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>JQuery</li>
+                            <!-- </ul> -->
+                        </div>
+                        <div class="col s3">
+                            <!-- <ul> -->
+                            <li>C#</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>Tableau</li>
+                        </div>
+                    </ul>
+
+                </div>
             </div>
         </div>
+        <div class="sections" id='portfolio'>
+            <div class="row" id="portfolioDiv">
+                <h2>Portfolio</h2>
+                <div class="portfolio-carousel">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/images/kira-auf-der-heide-IPx7J1n_xUc-unsplash.jpg">
+                                    <span class="card-title">GIF-TING</span>
+                                    <!-- <a class="btn-floating halfway-fab waves-effect"><i
+                                            class="material-icons">arrow_forward</i></a> -->
+                                </div>
+                                <div class="card-content">
+                                    <p>Organize your holiday gift lists in a fun way and search for great gift
+                                        ideas while you're at it.
 
-        <div class="row">
-            <div class="col-md-3 p-3">
-                <img src="assets/images/alix1.jpg" class="float-left img-fluid" alt="Profile Picture">
+                                    </p>
+                                </div>
+                                <div class="card-action hoverable">
+                                    <a href="https://stacyholtz6.github.io/Gif-ting/" target="_blank">Visit site</a>
+                                    <a href="https://github.com/stacyholtz6/Gif-ting" target="_blank">Github
+                                        Repository</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/images/ruby-schmank-plun-i022rk-unsplash.jpg">
+                                    <span class="card-title">Animals GIFs</span>
+                                    <!-- <a class="btn-floating halfway-fab waves-effect"><i
+                                            class="material-icons">arrow_forward</i></a> -->
+                                </div>
+                                <div class="card-content">
+                                    <p>Want to find the best GIFs of your favorite animals? Use this to see a collection
+                                        of GIFs of pre-defined animals, or add your own keywords to enjoy new GIFs.
+                                    </p>
+                                </div>
+                                <div class="card-action hoverable">
+                                    <a href="https://alixgrillo.github.io/giphy-api/" target="_blank">Visit site</a>
+                                    <a href="https://github.com/alixgrillo/giphy-api" target="_blank">Github
+                                        Repository</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/images/artem-maltsev-3n7DdlkMfEg-unsplash.jpg">
+                                    <span class="card-title">Harry Potter Random Number Game</span>
+                                    <!-- <a class="btn-floating halfway-fab waves-effect"><i
+                                            class="material-icons">arrow_forward</i></a> -->
+                                </div>
+                                <div class="card-content">
+                                    <p>Want to battle the houses of Hogwarts? Try your luck in this game of chance
+                                        in which one house battles the rest!
+                                    </p>
+                                </div>
+                                <div class="card-action hoverable">
+                                    <a href="https://alixgrillo.github.io/unit-4-game/" target="_blank">Visit site</a>
+                                    <a href="https://github.com/alixgrillo/unit-4-game" target="_blank">Github
+                                        Repository</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/images/jeremy-yap-J39X2xX_8CQ-unsplash.jpg">
+                                    <span class="card-title">Cinema Trivia</span>
+                                    <!-- <a class="btn-floating halfway-fab waves-effect"><i
+                                            class="material-icons">arrow_forward</i></a> -->
+                                </div>
+                                <div class="card-content">
+                                    <p>Think you know movies? Test your knowledge with this movie trivia game. But make
+                                        sure you answer quickly, there is a time limit!
+                                    </p>
+                                </div>
+                                <div class="card-action hoverable">
+                                    <a href="https://alixgrillo.github.io/TriviaGame/" target="_blank">Visit site</a>
+                                    <a href="https://github.com/alixgrillo/TriviaGame" target="_blank">Github
+                                        Repository</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-9 p-3">
-                <blockquote class="font-italic text-center">"Take the back roads instead of the highways" - Minnie Pearl</blockquote>
-                <p>
-                    This quote encompasses the path that Alix Grillo
-                    has been on in her career. As a mathematics and history major graduate from Gonzaga University, she
-                    was destined
-                    to be consumed by the insurance industry in one form or another. In her ten years at Great-West
-                    Financial, she
-                    performed a variety of jobs, including business systems, sales/marketing, operations, and project
-                    and relationship
-                    management. During this time, she also completed an MBA in Risk Management from University of
-                    Colorado Denver.
-
-                </p>
-                <p>
-
-                    Then, an amazing thing happened... she took a chance on something that would change her life
-                    forever. Her boyfriend
-                    - who would later be her husband - took an apprenticeship in a small town outside Edinburgh,
-                    Scotland and took Alix
-                    with him. During her time there, she completed an MSc in Business Analytics from the University of
-                    Edinburgh. This
-                    opened a world of opportunity because she did not even realize how far the world of business
-                    analytics and data
-                    science stretched. She was exposed to algorithms, processes, and technical capabilities that she did
-                    know existed. Her
-                    capstone work was research to determine a novel approach to solving a resource problem in airport
-                    operations using a
-                    hybrid simulation and heuristic approach. This work is being published as part of the Winter
-                    Simulation Conference.
-
-                </p>
-                <p>
-
-                    All of these twists and turns have led Alix to discover her passion for software and web
-                    development. In her current
-                    role at Charles Schwab as Manager, Risk Analytics, she has opportunities to contribute to the
-                    information system
-                    supporting her team using a .NET framework with a desktop and web version. As this system is still
-                    very much in the
-                    development phases, Alix has seen the system come to life. Alix can bring aspects of all her walks
-                    of life to a
-                    software engineering career and add value to any project that she takes part in.
-                </p>
+        </div>
+        <div class="sections" id='contact'>
+            <!-- validation modal for form -->
+            <div class="modal" id="validation-modal">
+                <div class="modal-content">
+                    <p class="error">Please provide your name and email so that I know how to respond.</p>
+                </div>
+            </div>
+            <div class="modal" id="confirmation-modal">
+                    <div class="modal-content">
+                        <p class="error">Thanks for reaching out. I will respond as soon as possible.</p>
+                    </div>
+                </div>
+            <div class="row" id="contactDiv">
+                <h2>Contact Me</h2>
+                <h5>Please complete the information below and I will get back to you or you can contact me directly:</h5>
+                <p class="contactInfo">Phone Number: 303.829.0672</p>
+                <p class="contactInfo">Email: alix.grillo2@gmail.com</p>
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="contact-name" type="text" class="validate">
+                            <label for="contact-name">Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input id="contact-email" type="email" class="validate">
+                            <label for="contact-email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">message</i>
+                            <input id="contact-message" type="text" class="validate">
+                            <label for="contact-message">Message</label>
+                        </div>
+                    </div>
+                    <a class="btn" id="contact-submit"><i class="material-icons right">send</i>Submit</a>
+                </form>
             </div>
         </div>
     </div>
 
-    <!-- <nav class="navbar fixed-bottom navbar-dark bg-secondary justify-content-center border-top border-info mt-5">
-        <a class="navbar-brand" href="#">&copy Copyright</a>
-    </nav> -->
-    <footer class="footer fixed-bottom m-0 mt-5">
-        <!-- <div class="container bg-dark"> -->
-            <p class="text-white text-center m-0 p-1">&copy Copyright</p>
-        <!-- </div> -->
-    </footer>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <!-- <script type="text/javascript" src="assets/javascript/materialize.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+
+    <script type="text/javascript" src="assets/javascript/portfolio.js"></script>
 </body>
 
 </html>

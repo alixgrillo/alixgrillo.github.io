@@ -1,69 +1,88 @@
-# Bootstrap-Portfolio Version 1.0 10/1/2019
-portfolio pages using bootstrap
+# Portfolio - Update 12/5/2019
+Portfolio Update 2019
 
-## Description
-------------------------------------------------
-- Homework #2 was to modify the professional portfolio site using
-HTML/CSS using Bootstrap. This should be committed to a GitHub repository and published using GitPages.
+This is the latest iteration of my personal portfolio. There were a couple of inspirations that I had:
+1. I wanted to work with a different CSS framework to expand my knowledge of different technologies.
+2. I wanted to clean up my portfolio and give it a more modern look and feel.
+3. I wanted to incorporate new technologies that I have enjoyed using, such as Firebase and Slick Carousel.
 
-- There are 3 HTML pages that will be described below. Each page
-will share the same header style. The header contains a logo that contains
-my name and a naviation bar that will direct the user to each of the 
-3 pages. There is a footer fixed on each page that contains "Copyright" as a placeholder for any future disclosures.
+Please access my site at https://alixgrillo.github.io/.
 
-- The navigation bar and the grid of the page should be styled using Bootstrap
-(https://getbootstrap.com/). The purpose of this is to utilize CSS functionality
-already specified by Bootstrap. This assists in mobile responsiveness as well. For 
-other portions of the page, such as form, card links, and footers, there is 
-efficiency to be gained by using Bootstrap as well. 
 
-- About (index.html): The About tab contains a header "About Me"
-and block text in paragraph form. This is a brief bio about me and contains
-one image.
+## Table of Contents
+* [About](#about)
+* [Technical Features](#technical-features)
+* [Requirements](#requirements)
+* [Build Tools](#build-tools)
+* [Acknowledgements](#acknowledgements)
+* [License](#license)
 
-- Portfolio (portfolio.html): The Portfolio tab contains a header "Portfolio"
-and 5 placeholder links (each containing a picture and text) for future links
-to portfolio projects. These images are two across and stacked vertically. The
-text should be overlayed on the image and positioned toward the bottom of the 
-image spanning the entire width of the image. This is done using the Bootstrap
-card functionality.
 
-- Contact (index.html): The Contact tab contains a header "Contact"
-and a form capturing 3 pieces of information: Name (with John Smith as an 
-example), Email (with example@gmail.com as an example), and Message (default to 
-blank). There is a Submit button, which changes colors and cursor style when 
-cursor hovers over the button.
+## About
+My portfolio has four sections: 
+* [Home](#home)
+* [About Me](#about-me)
+* [Portfolio](#portfolio)
+* [Contact Me](#contact-me)
 
-- The primary colors used are #4aaaa5 (all teal section), #777777 font color,
-#ffffff for main header and main content background, #666666 for the footer background, and #dddddd for main content border color. A new background image
-was introduce for the page background as well as the content background.
+### Home
+It was important to me that the landing page be clean and highight my name and title. Along these lines,
+I wanted to have the common items, such as Github and LinkedIn access buttons available on a navigation
+bar in order to always be visible. This also includes downloading a current version of my resume and accessing
+the various sections of the page.
 
-- The header font is 'Great Vibes' and content font is 'Roboto'. These were both
-using Google Fonts (https://fonts.google.com/).
 
-- All images are contained within the repository in /images folder. Any extra styling above and beyond the Bootstrap functionality is completed by CSS file contained in /css folder. There are also background image options
-stored in /background.
-------------------------------------------------
+<img src="/assets/images/landing-page.gif">
 
-## Usage notes
-------------------------------------------------
-- This application is an HTML and CSS website hosted
-by GitPages. 
+### About Me
 
-- The code is host by GitHub under alixgrillo/Bootstrap-Portfolio
-repository.
-------------------------------------------------
+<img src="/assets/images/about-me.png">
 
-## Installation
-------------------------------------------------
-- This program does not require installation. 
-You can access the live website at 
-https://alixgrillo.github.io/Bootstrap-Portfolio
-------------------------------------------------
+### Portfolio
+The portfolio section utilizes a Slick Carousel that rotates every 5 seconds automatically. These are not
+a comprehensive collection of my projects, however, it is a group of my favorites. A full collection of my 
+work can be seen in Github at https://github.com/alixgrillo.
 
-## Support
-------------------------------------------------
-- Phone: 303-829-0672
-- Website: https://alixgrillo.github.io/Bootstrap-Portfolio/contact.html
-- E-mail: alix.grillo2@gmail.com
-------------------------------------------------
+<img src="/assets/images/portfolio.gif">
+
+### Contact Form
+My contact form allows anyone visiting to send a message. Make sure you put in a name and an email as there is 
+validation to ensure I am capturing that information. But send me a message too - it will make it more interesting.
+Firebase will store all of this information with a timestamp.
+
+<img src="/assets/images/contact-me.gif">
+
+## Technical Features
+Some of the features that I have included on this page are:
+* Slick Carousel for portfolio. This should animate and move automatically every 5 seconds.
+* Contact form saves any messages to Firebase database that I can access. There is a timestamp
+included. (Note: A future enhancement will be to have an event listener look for new messages to
+alert me when they have been submitted).
+* Fully mobile responsive. Materialize was a big help on this, HOWEVER, their navbar is not automatically
+mobile responsive. Thanks to Web Zone at https://www.youtube.com/watch?v=AhioxFWkYRg for leading me in the 
+direction of converting the navbar to a side navbar when the screen falls below 992px.
+
+<img src="/assets/images/mobile-responsive-navbar.gif">
+
+## Requirements
+There are no requirements for this website.
+
+## Build Tools
+* HTML/CSS
+* Materialize CSS/JQuery 1.0.0
+* JQuery
+* Firebase 7.5.0 (Realtime Database)
+* Slick Carousel 1.9.0
+* Google Font
+* Google Material Icons
+* Font Awesome 4.7.0
+
+## Acknowledgements
+* Thank you to Unsplash for the following images:
+1. Photo by Alex Knight (Background Image)
+2. Photo by Artem Maltsev (Portfolio - Harry Potter)
+3. Photo by Ruby Schmank (Portfolio - Animal GIF)
+4. Photo by Jeremy Yap (Portfolio - Movie Trivia)
+5. Photo by Kira auf der Heide (Portfolio - Gift) 
+* Thank you to Canva Color Generator for providing me with a clean color palate based on a provided picture. 
+(https://www.canva.com/colors/color-palette-generator/)
