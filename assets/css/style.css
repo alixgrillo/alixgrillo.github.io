@@ -1,4 +1,4 @@
-#aboutMeDiv, #portfolioDiv, #contactDiv{
+#aboutMeDiv, #portfolioDiv, #contactDiv, #languages{
     width: 100%;
     min-height: 100%;
     background-color: #636C6A;
@@ -167,6 +167,10 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .error{
     color: black;
 }
+.pl{
+    width: 90%;
+}
+
     /* color palatte:
     Screen #C5C1C0
     Steel #0A1612
