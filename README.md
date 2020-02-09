@@ -1,5 +1,5 @@
-# Portfolio - Update 12/5/2019
-Portfolio Update 2019
+# Portfolio - Update 2/9/2020
+Portfolio Update 2020
 
 This is the latest iteration of my personal portfolio. There were a couple of inspirations that I had:
 1. I wanted to work with a different CSS framework to expand my knowledge of different technologies.
