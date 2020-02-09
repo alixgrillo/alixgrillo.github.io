@@ -1,4 +1,4 @@
-#aboutMeDiv, #portfolioDiv, #contactDiv, #languages{
+#aboutMeDiv, #portfolioDiv, #contactDiv, #programming, #applications{
     width: 100%;
     min-height: 100%;
     background-color: #636C6A;
@@ -12,6 +12,7 @@
 html, body{
     height:100%;
     color: #E8BA93;
+    text-align: center;
     }
 h1{
     font-family: 'Alatsi', sans-serif;
@@ -24,6 +25,7 @@ h1{
     min-height: 100vh;
 }
 h2{
+    text-align: left;
     text-shadow: 2px 2px #151412;
 }
 .card .card-image .card-title{
@@ -57,7 +59,7 @@ h2{
     color:#E8BA93;
 }
 .contactInfo{
-    color:##E8BA93;;
+    color: #E8BA93;;
     font-size: 20px;
     text-shadow: 1px 1px #151412;
     text-align: center;
@@ -169,8 +171,19 @@ textarea.materialize-textarea:focus:not([readonly]) {
 }
 .pl{
     width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 #151412, 0 6px 20px 0 #151412;
 }
-
+.pl:hover{
+    width: 90%;
+    border-radius: 8px;
+    opacity: .5;
+    box-shadow: 0 4px 8px 0 #151412, 0 3px 12px 0 #151412;
+}
+hr{
+    height: 2px;
+    color: #E8BA93;
+}
     /* color palatte:
     Screen #C5C1C0
     Steel #0A1612

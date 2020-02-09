@@ -22,7 +22,8 @@
     <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
 
-
+    <!-- AOS for fading -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link type="text/css" rel="stylesheet" href="assets/css/style.css">
 
@@ -57,6 +58,7 @@
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#landingPage">Home</a></li>
                 <li><a href="#about">About Me</a></li>
+                <li><a href="#languages">Languages</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
@@ -68,6 +70,7 @@
     <ul class="sidenav" id="mobile-nav">
         <li><a href="#landingPage">Home</a></li>
         <li><a href="#about">About Me</a></li>
+        <li><a href="#languages">Languages</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact Me</a></li>
         <li><a href='assets/documents/cv-Alexandra_Clare.pdf' target="_blank">Download Resume</a></li>
@@ -82,7 +85,7 @@
             <p id="title">Web <span id="titleSub">Developer</span> from Golden, CO</p>
         </div>
         <div class="sections" id='about'>
-            <div class="row" id="aboutMeDiv">
+            <div class="row" data-aos="fade-up" data-aos-duration="2000" id="aboutMeDiv">
                 <h2>About me</h2>
                 <div class="row">
                     <div class="col s12 m4">
@@ -134,9 +137,10 @@
 
             </div>
         </div>
+     
 
         <div class="sections" id="languages">
-            <div class="row" id="programming">
+            <div class="row" data-aos="fade-up" data-aos-duration="2000" id="programming">
                 <h2>Programming Languages</h2>
                 <div class="row">
                     <div class="col s12 m2">
@@ -220,9 +224,6 @@
                     </div>
                 </div>
 
-            </div>
-
-            <div class="row" id="programming">
                 <h2>Applications</h2>
                 <div class="row">
                     <div class="col s12 m2">
@@ -272,7 +273,7 @@
             </div>
         </div>
         <div class="sections" id='portfolio'>
-            <div class="row" id="portfolioDiv">
+            <div class="row" data-aos="fade-up" data-aos-duration="2000" id="portfolioDiv">
                 <h2>Portfolio</h2>
                 <div class="portfolio-carousel">
                     <div class="row">
@@ -302,10 +303,30 @@
                         <div class="col s12">
                             <div class="card">
                                 <div class="card-image">
-                                    <img src="assets/images/ruby-schmank-plun-i022rk-unsplash.jpg">
-                                    <span class="card-title">Animals GIFs</span>
+                                    <img src="assets/images/kat-yukawa-K0E6E0a0R3A-unsplash.jpg">
+                                    <span class="card-title">HopeLine</span>
                                     <!-- <a class="btn-floating halfway-fab waves-effect"><i
                                             class="material-icons">arrow_forward</i></a> -->
+                                </div>
+                                <div class="card-content">
+                                    <p>Follow your favorite charities on your own profile with this app. Get information to
+                                        help support your decision to donate.
+                                    </p>
+                                </div>
+                                <div class="card-action hoverable">
+                                    <a href="https://egyptian-tsunamis.herokuapp.com/" target="_blank">Visit site</a>
+                                    <a href="https://github.com/alixgrillo/egyptianTsunamis" target="_blank">Github
+                                        Repository</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="col s12">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/images/ruby-schmank-plun-i022rk-unsplash.jpg">
+                                    <span class="card-title">Animals GIFs</span>
                                 </div>
                                 <div class="card-content">
                                     <p>Want to find the best GIFs of your favorite animals? Use this to see a collection
@@ -315,6 +336,46 @@
                                 <div class="card-action hoverable">
                                     <a href="https://alixgrillo.github.io/giphy-api/" target="_blank">Visit site</a>
                                     <a href="https://github.com/alixgrillo/giphy-api" target="_blank">Github
+                                        Repository</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/images/mohammad-metri-1oKxSKSOowE-unsplash.jpg">
+                                    <span class="card-title">Liri Bot</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>Explore this command-line only application to discover your favorite concerts, music, 
+                                        and movies.
+                                    </p>
+                                </div>
+                                <div class="card-action hoverable">
+                                    <a>Not Available</a>
+                                    <a href="https://github.com/alixgrillo/liri-node-app" target="_blank">Github
+                                        Repository</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/images/heidi-fin-2TLREZi7BUg-unsplash.jpg">
+                                    <span class="card-title">Bamazon</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>This command-line only application will track inventory for management and sell consumer
+                                        products for an company.
+                                    </p>
+                                </div>
+                                <div class="card-action hoverable">
+                                    <a>Not Available</a>
+                                    <a href="github.com/alixgrillo/bamazon" target="_blank">Github
                                         Repository</a>
                                 </div>
                             </div>
@@ -367,7 +428,7 @@
                 </div>
             </div>
         </div>
-        <div class="sections" id='contact'>
+        <div class="sections" data-aos="fade-up" data-aos-duration="2000" id='contact'>
             <!-- validation modal for form -->
             <div class="modal" id="validation-modal">
                 <div class="modal-content">
@@ -428,6 +489,8 @@
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script type="text/javascript" src="assets/javascript/portfolio.js"></script>
 </body>

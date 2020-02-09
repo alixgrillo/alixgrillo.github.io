@@ -84,5 +84,8 @@ There are no requirements for this website.
 3. Photo by Ruby Schmank (Portfolio - Animal GIF)
 4. Photo by Jeremy Yap (Portfolio - Movie Trivia)
 5. Photo by Kira auf der Heide (Portfolio - Gift) 
+6. Photo by Kat Yukawa (Portfolio - Charity)
+7. Photo by Heidi Fin (Portfolio - Bamazon)
+8. Photo by Mohammad Metri (Portfolio - Liri App)
 * Thank you to Canva Color Generator for providing me with a clean color palate based on a provided picture. 
 (https://www.canva.com/colors/color-palette-generator/)

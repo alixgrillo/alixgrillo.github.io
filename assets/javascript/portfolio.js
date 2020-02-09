@@ -14,6 +14,9 @@ firebase.initializeApp(firebaseConfig);
 var database = firebase.database();
 
 $(document).ready(function(){
+
+    AOS.init();
+
     $('.modal').modal();
     $('.tooltipped').tooltip();
     $('.sidenav').sidenav();
