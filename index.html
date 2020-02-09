@@ -123,9 +123,10 @@
 
                 <img id="profilePic" src="assets/images/pic.jpg" alt="Alix Grillo">
                 <p>Alix Grillo is a web developer with data science and business analyst experience adept at solving
-                    problems and implementing complicated configurations. Skills in HTML, CSS and Javascript and
-                    strengths in communicating both technical and non-technical aspects and maintaining a
-                    positive attitude that infects team morale. Overcame obstacles in completing published
+                    problems and implementing complicated configurations. Sharpened skills in Javascript, Node.js,
+                    MySQL and MongoDB while completing a Certificate in Full Stack Web Development from the University
+                    of Denver. Demonstrates strengths in communicating both technical and non-technical aspects and
+                    maintaining a positive attitude that infects team morale. Overcame obstacles in completing published
                     novel approach to hybrid simulation and heuristic approach to airport operations problem
                     while completing MSc at the University of Edinburgh. Successfully drove an administration
                     conversion project completion, including requirements design and testing, for 18,000 life
@@ -137,137 +138,208 @@
 
             </div>
         </div>
-     
+
 
         <div class="sections" id="languages">
+            <!-- Modal Structure -->
+            <div id="moreInfo" class="modal">
+                <div class="modal-content">
+                    <h2 id="moreInfoTitle">Modal Header</h2>
+                    <p id="moreInfoHeader">Technology Used:</p>
+                    <ul id="moreInfoList"></ul>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">DONE</a>
+                </div>
+            </div>
             <div class="row" data-aos="fade-up" data-aos-duration="2000" id="programming">
                 <h2>Programming Languages</h2>
                 <div class="row">
-                    <div class="col s12 m2">
+                    <div class="col s12 m2 pl-container">
                         <img class="pl" src="./assets/images/javascript.jpg" alt="javascript">
-                        <p class="pl-tag">Javascript</p>
+                        <div class="overlay">
+                            <div class="language-text">Javascript</div>
+                        </div>
                     </div>
-                    <div class="col s12 m2">
+                    <div class="col s12 m2 pl-container">
                         <img class="pl" src="./assets/images/html.jpg" alt="html">
-                        <p class="pl-tag">HTML</p class="pl-tag">
+                        <div class="overlay">
+                            <div class="language-text">HTML5</div>
+                        </div>
                     </div>
-                    <div class="col s12 m2">
+                    <div class="col s12 m2 pl-container">
                         <img class="pl" src="./assets/images/css.jpg" alt="css">
-                        <p class="pl-tag">CSS</p class="pl-tag">
+                        <div class="overlay">
+                            <div class="language-text">CSS3</div>
+                        </div>
                     </div>
-                    <div class="col s12 m2">
+                    <div class="col s12 m2 pl-container">
                         <img class="pl" src="./assets/images/jquery.jpg" alt="jquery">
-                        <p class="pl-tag">JQuery</p class="pl-tag">
+                        <div class="overlay">
+                            <div class="language-text">JQuery</div>
+                        </div>
                     </div>
-                    <div class="col s12 m2">
+                    <div class="col s12 m2 pl-container">
                         <img class="pl" src="./assets/images/node.jpg" alt="node">
-                        <p class="pl-tag">NodeJS</p class="pl-tag">
+                        <div class="overlay more-info" data-id=0>
+                            <div class="language-text">Node.js <i
+                                class="small material-icons">zoom_in</i></div>
+                        </div>
                     </div>
-                    <div class="col s12 m2">
+                    
+                    <div class="col s12 m2 pl-container">
                         <img class="pl" src="./assets/images/express.png" alt="express">
-                        <p class="pl-tag">ExpressJS</p class="pl-tag">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m2">
-                        <img class="pl" src="./assets/images/handlebars.jpg" alt="handlebars">
-                        <p class="pl-tag">Handlebars.js</p>
-                    </div>
-                    <div class="col s12 m2">
-                        <img class="pl" src="./assets/images/sequelize.jpg" alt="sequelize">
-                        <p class="pl-tag">Sequelize</p class="pl-tag">
-                    </div>
-                    <div class="col s12 m2">
-                        <img class="pl" src="./assets/images/mongodb.jpg" alt="mongodb">
-                        <p class="pl-tag">MongoDB</p class="pl-tag">
-                    </div>
-                    <div class="col s12 m2">
-                        <img class="pl" src="./assets/images/angular.jpg" alt="angular">
-                        <p class="pl-tag">Angular</p class="pl-tag">
-                    </div>
-                    <div class="col s12 m2">
-                        <img class="pl" src="./assets/images/react.jpg" alt="react">
-                        <p class="pl-tag">React</p class="pl-tag">
-                    </div>
-                    <div class="col s12 m2">
-                        <img class="pl" src="./assets/images/bootstrap.jpg" alt="bootstrap">
-                        <p class="pl-tag">Bootstrap</p class="pl-tag">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m2">
-                        <img class="pl" src="./assets/images/materialize.jpg" alt="materilize">
-                        <p class="pl-tag">Materialize CSS</p class="pl-tag">
-                    </div>
-
-                    <div class="col s12 m2">
-                        <img class="pl" src="./assets/images/csharp.jpg" alt="csharp">
-                        <p class="pl-tag">C#</p class="pl-tag">
-                    </div>
-                    <div class="col s12 m2">
-                        <img class="pl" src="./assets/images/java.jpg" alt="java">
-                        <p class="pl-tag">Java</p class="pl-tag">
-                    </div>
-                    <div class="col s12 m2">
-                        <img class="pl" src="./assets/images/python.jpg" alt="python">
-                        <p class="pl-tag">Python</p class="pl-tag">
-                    </div>
-                    <div class="col s12 m2">
-                        <img class="pl" src="./assets/images/r.jpg" alt="r">
-                        <p class="pl-tag">R</p class="pl-tag">
-                    </div>
-                    <div class="row">
-                        <div class="col s12 m2">
-                            <img class="pl" src="./assets/images/matlab.jpg" alt="matlab">
-                            <p class="pl-tag">MATLAB</p class="pl-tag">
+                        <div class="overlay">
+                            <div class="language-text">Express</div>
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col s12 m2 pl-container">
+                        <img class="pl" src="./assets/images/handlebars.jpg" alt="handlebars">
+                        <div class="overlay">
+                            <div class="language-text">Handlebars</div>
+                        </div>
+                    </div>
+                    <div class="col s12 m2 pl-container">
+                        <img class="pl" src="./assets/images/sequelize.jpg" alt="sequelize">
+                        <div class="overlay">
+                            <div class="language-text">Sequelize</div>
+                        </div>
+                    </div>
+                    <div class="col s12 m2 pl-container">
+                        <img class="pl" src="./assets/images/mongodb.jpg" alt="mongodb">
+                        <div class="overlay">
+                            <div class="language-text">MongoDB</div>
+                        </div>
+                    </div>
+                    <div class="col s12 m2 pl-container">
+                        <img class="pl" src="./assets/images/angular.jpg" alt="angular">
+                        <div class="overlay">
+                            <div class="language-text">Angular</div>
+                        </div>
+                    </div>
+                    <div class="col s12 m2 pl-container">
+                        <img class="pl" src="./assets/images/react.jpg" alt="react">
+                        <div class="overlay">
+                            <div class="language-text">React</div>
+                        </div>
+                    </div>
+                    <div class="col s12 m2 pl-container">
+                        <img class="pl" src="./assets/images/bootstrap.jpg" alt="bootstrap">
+                        <div class="overlay">
+                            <div class="language-text">Bootstrap</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m2 pl-container">
+                        <img class="pl" src="./assets/images/materialize.jpg" alt="materilize">
+                        <div class="overlay">
+                            <div class="language-text">Materialize CSS</div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m2 pl-container">
+                        <img class="pl" src="./assets/images/csharp.jpg" alt="csharp">
+                        <div class="overlay">
+                            <div class="language-text">C#</div>
+                        </div>
+                    </div>
+                    <div class="col s12 m2 pl-container">
+                        <img class="pl" src="./assets/images/java.jpg" alt="java">
+                        <div class="overlay">
+                            <div class="language-text">Java</div>
+                        </div>
+                    </div>
+                    <div class="col s12 m2 pl-container">
+                        <img class="pl" src="./assets/images/python.jpg" alt="python">
+                        <div class="overlay more-info" data-id=1>
+                            <div class="language-text">Python <i
+                                class="small material-icons">zoom_in</i></div>
+                        </div>
+                    </div>
+                    <div class="col s12 m2 pl-container">
+                        <img class="pl" src="./assets/images/r.jpg" alt="r">
+                        <div class="overlay">
+                            <div class="language-text">R</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m2 pl-container">
+                            <img class="pl" src="./assets/images/matlab.jpg" alt="matlab">
+                            <div class="overlay">
+                                <div class="language-text">MATLAB</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
 
                 <h2>Applications</h2>
                 <div class="row">
-                    <div class="col s12 m2">
+                    <div class="col s12 m2 pl-container">
                         <img class="pl" src="./assets/images/github.jpg" alt="github">
-                        <p class="pl-tag">Github</p>
+                        <div class="overlay">
+                            <div class="language-text">Github</div>
+                        </div>
                     </div>
-                    <div class="col s12 m2">
+                    <div class="col s12 m2 pl-container">
                         <img class="pl" src="./assets/images/mysql.jpg" alt="mySQL">
-                        <p class="pl-tag">MySQL</p class="pl-tag">
+                        <div class="overlay">
+                            <div class="language-text">MySQL</div>
+                        </div>
                     </div>
-                    <div class="col s12 m2">
+                    <div class="col s12 m2 pl-container">
                         <img class="pl" src="./assets/images/sql server.jpg" alt="sql server">
-                        <p class="pl-tag">SQL Server Management Studio</p class="pl-tag">
+                        <div class="overlay">
+                            <div class="language-text">SQL Server Management Studio</div>
+                        </div>
                     </div>
-                    <div class="col s12 m2">
+                    <div class="col s12 m2 pl-container">
                         <img class="pl" src="./assets/images/visual studio.jpg" alt="visual studio">
-                        <p class="pl-tag">Visual Studio</p class="pl-tag">
+                        <div class="overlay">
+                            <div class="language-text">Visual Studio</div>
+                        </div>
                     </div>
-                    <div class="col s12 m2">
+                    <div class="col s12 m2 pl-container">
                         <img class="pl" src="./assets/images/dotnet.jpg" alt="dotnet">
-                        <p class="pl-tag">.NET Framework</p class="pl-tag">
+                        <div class="overlay">
+                            <div class="language-text">.NET Framework</div>
+                        </div>
                     </div>
-                    <div class="col s12 m2">
+                    <div class="col s12 m2 pl-container">
                         <img class="pl" src="./assets/images/jira.jpg" alt="jira">
-                        <p class="pl-tag">JIRA</p class="pl-tag">
+                        <div class="overlay">
+                            <div class="language-text">JIRA</div>
+                        </div>
                     </div>
 
                 </div>
                 <div class="row">
-                    <div class="col s12 m2">
+                    <div class="col s12 m2 pl-container">
                         <img class="pl" src="./assets/images/tableau.jpg" alt="tableau">
-                        <p class="pl-tag">Tableau</p class="pl-tag">
+                        <div class="overlay">
+                            <div class="language-text">Tableau</div>
+                        </div>
                     </div>
-                    <div class="col s12 m2">
+                    <div class="col s12 m2 pl-container">
                         <img class="pl" src="./assets/images/firebase.jpg" alt="firebase">
-                        <p class="pl-tag">Firebase</p class="pl-tag">
+                        <div class="overlay">
+                            <div class="language-text">Firebase</div>
+                        </div>
                     </div>
-                    <div class="col s12 m2">
+                    <div class="col s12 m2 pl-container">
                         <img class="pl" src="./assets/images/anylogic.jpg" alt="anylogic">
-                        <p class="pl-tag">AnyLogic</p class="pl-tag">
+                        <div class="overlay">
+                            <div class="language-text">AnyLogic</div>
+                        </div>
                     </div>
-                    <div class="col s12 m2">
+                    <div class="col s12 m2 pl-container">
                         <img class="pl" src="./assets/images/arena.jpg" alt="arena">
-                        <p class="pl-tag">ARENA</p class="pl-tag">
+                        <div class="overlay">
+                            <div class="language-text">ARENA</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -282,8 +354,6 @@
                                 <div class="card-image">
                                     <img src="assets/images/kira-auf-der-heide-IPx7J1n_xUc-unsplash.jpg">
                                     <span class="card-title">GIF-TING</span>
-                                    <!-- <a class="btn-floating halfway-fab waves-effect"><i
-                                            class="material-icons">arrow_forward</i></a> -->
                                 </div>
                                 <div class="card-content">
                                     <p>Organize your holiday gift lists in a fun way and search for great gift
@@ -292,8 +362,8 @@
                                     </p>
                                 </div>
                                 <div class="card-action hoverable">
-                                    <a href="https://stacyholtz6.github.io/Gif-ting/" target="_blank">Visit site</a>
-                                    <a href="https://github.com/stacyholtz6/Gif-ting" target="_blank">Github
+                                    <a href="https://alixgrillo.github.io/Gif-ting/" target="_blank">Visit site</a>
+                                    <a href="https://github.com/alixgrillo/Gif-ting" target="_blank">Github
                                         Repository</a>
                                 </div>
                             </div>
@@ -305,11 +375,10 @@
                                 <div class="card-image">
                                     <img src="assets/images/kat-yukawa-K0E6E0a0R3A-unsplash.jpg">
                                     <span class="card-title">HopeLine</span>
-                                    <!-- <a class="btn-floating halfway-fab waves-effect"><i
-                                            class="material-icons">arrow_forward</i></a> -->
                                 </div>
                                 <div class="card-content">
-                                    <p>Follow your favorite charities on your own profile with this app. Get information to
+                                    <p>Follow your favorite charities on your own profile with this app. Get information
+                                        to
                                         help support your decision to donate.
                                     </p>
                                 </div>
@@ -349,7 +418,8 @@
                                     <span class="card-title">Liri Bot</span>
                                 </div>
                                 <div class="card-content">
-                                    <p>Explore this command-line only application to discover your favorite concerts, music, 
+                                    <p>Explore this command-line only application to discover your favorite concerts,
+                                        music,
                                         and movies.
                                     </p>
                                 </div>
@@ -369,7 +439,8 @@
                                     <span class="card-title">Bamazon</span>
                                 </div>
                                 <div class="card-content">
-                                    <p>This command-line only application will track inventory for management and sell consumer
+                                    <p>This command-line only application will track inventory for management and sell
+                                        consumer
                                         products for an company.
                                     </p>
                                 </div>

@@ -76,6 +76,7 @@ There are no requirements for this website.
 * Google Font
 * Google Material Icons
 * Font Awesome 4.7.0
+* AOS - Animate on Scroll Library
 
 ## Acknowledgements
 * Thank you to Unsplash for the following images:
