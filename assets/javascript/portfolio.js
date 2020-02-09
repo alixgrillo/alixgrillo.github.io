@@ -101,6 +101,13 @@ var moreInfo = [
         "NLTK",
         "Stanford CoreNLP Python"
       ]
+  },
+  firebase = {
+      title: "Firebase",
+      skills: [
+          "Real-time Database",
+          "Storing data by user for authentication purposes"
+      ]
   }
 ];
 
