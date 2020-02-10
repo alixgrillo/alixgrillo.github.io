@@ -55,6 +55,7 @@ Firebase will store all of this information with a timestamp.
 ## Technical Features
 Some of the features that I have included on this page are:
 * Slick Carousel for portfolio. This should animate and move automatically every 5 seconds.
+* AOS package quickly integrates a fade-in function for each of the sections during scrolling.
 * Contact form saves any messages to Firebase database that I can access. There is a timestamp
 included. (Note: A future enhancement will be to have an event listener look for new messages to
 alert me when they have been submitted).
@@ -90,3 +91,6 @@ There are no requirements for this website.
 8. Photo by Mohammad Metri (Portfolio - Liri App)
 * Thank you to Canva Color Generator for providing me with a clean color palate based on a provided picture. 
 (https://www.canva.com/colors/color-palette-generator/)
+
+## License
+* Licensed under the [MIT License](./LICENSE).

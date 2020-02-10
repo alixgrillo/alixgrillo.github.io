@@ -204,7 +204,7 @@ hr{
 }
   
 .pl-container:hover .overlay {
-opacity: 1;
+opacity: .9;
 }
   
 .language-text {
@@ -230,6 +230,23 @@ transform: translate(-50%, -50%);
 #moreInfoList li{
     list-style-type: square;
 }
+
+@media only screen and (max-width: 600px) {
+    .modal{
+        width: 90%;
+    }
+    .pl {
+        width: 75%;
+        position: relative;
+    }
+    .overlay {
+        position: absolute;
+        left: 12.5%;
+        height: 100%;
+        width: 75%;
+    }
+      
+  }
     /* color palatte:
     Screen #C5C1C0
     Steel #0A1612
