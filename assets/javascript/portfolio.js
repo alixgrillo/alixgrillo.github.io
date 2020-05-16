@@ -148,12 +148,12 @@ $(document).on("click", "#contact-submit", function(event) {
   if (name === "" || email == "") {
     $("#validation-modal").modal("open");
   } else {
-    database.ref().push({
-      name: name,
-      email: email,
-      message: message,
-      timestamp: firebase.database.ServerValue.TIMESTAMP
-    });
+    // database.ref().push({
+    //   name: name,
+    //   email: email,
+    //   message: message,
+    //   timestamp: firebase.database.ServerValue.TIMESTAMP
+    //});
     $("#confirmation-modal").modal("open");
   }
 

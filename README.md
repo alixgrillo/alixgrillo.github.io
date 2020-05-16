@@ -89,6 +89,7 @@ There are no requirements for this website.
 6. Photo by Kat Yukawa (Portfolio - Charity)
 7. Photo by Heidi Fin (Portfolio - Bamazon)
 8. Photo by Mohammad Metri (Portfolio - Liri App)
+9. Photo by Simon Migaj on Unsplash (Portfolio - U-Travel)
 * Thank you to Canva Color Generator for providing me with a clean color palate based on a provided picture. 
 (https://www.canva.com/colors/color-palette-generator/)
 
