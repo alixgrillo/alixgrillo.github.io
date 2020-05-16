@@ -551,7 +551,21 @@
                 </h5>
                 <p class="contactInfo">Phone Number: 303.829.0672</p>
                 <p class="contactInfo">Email: alix.grillo2@gmail.com</p>
-                <form action="https://formspree.io/xwkowwye" method="POST" class="col s12">
+                <div>
+                    <button class="btn waves-effect waves-light tooltipped" data-position="bottom"
+                    data-tooltip="Download Resume" id="download">
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                </button>
+                <button class="btn waves-effect waves-light tooltipped" data-position="bottom"
+                    data-tooltip="GitHub Profile" id="github">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </button>
+                <button class="btn waves-effect waves-light tooltipped" data-position="bottom" data-tooltip="LinkedIn"
+                    id="linkedin">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </button>
+                </div>
+                <form action="mail.php" method="POST" class="col s12">
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">account_circle</i>
@@ -562,7 +576,7 @@
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">email</i>
-                            <input id="contact-email" type="email" name="_reply-to" class="validate">
+                            <input id="contact-email" type="email" name="email" class="validate">
                             <label for="contact-email">Email</label>
                         </div>
                     </div>
@@ -574,6 +588,7 @@
                         </div>
                     </div>
                     <input type="hidden" name="_next" value="https://alixgrillo.github.io/"/>
+                    <input type="submit" value="Send"><input type="reset" value="Clear">
                     <button class="btn" id="contact-submit"><i class="material-icons right">send</i>Submit</button>
                 </form>
             </div>

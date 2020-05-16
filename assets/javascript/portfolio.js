@@ -126,7 +126,7 @@ $(document).on("click", ".more-info", function(event) {
 });
 
 $(document).on("click", "#contact-submit", function(event) {
-  event.preventDefault();
+ // event.preventDefault();
 
   var name = $("#contact-name")
     .val()
